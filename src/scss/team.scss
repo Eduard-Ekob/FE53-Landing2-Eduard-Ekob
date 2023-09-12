@@ -1,0 +1,71 @@
+.team-section {
+}
+.team-container {
+    @include main-container;
+    @include flex-between-center;
+    padding: pxToRem(100) 0 pxToRem(100);
+    margin: auto;
+}
+.team-wrapper {
+    @include flex-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: pxToRem(-15);
+    margin-right: pxToRem(-15);
+}
+.team-member__wrapper {
+    display: block;
+    width: pxToRem(270);
+    margin: pxToRem(15) pxToRem(15) pxToRem(15) pxToRem(15);
+}
+.member-photo {
+    width: pxToRem(270);
+    height: pxToRem(270);
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.member-name {
+    width: 100%;
+    text-align: left;
+    margin-top: pxToRem(30);
+}
+.name {
+    @include font($dark-gray, pxToRem(24), 700, pxToRem(28.18))
+}
+.member-position {
+    width: 100%;
+    text-align: left;
+    margin-top: pxToRem(5.29);
+}
+.mPosition {
+    @include font($red, pxToRem(18), 400, pxToRem(21.13));
+    text-transform: uppercase;
+}
+.member-description {
+    width: 100%;
+    text-align: left;
+    margin-top: pxToRem(17.86);
+}
+.mDescription {
+    @include font($purple, pxToRem(18), 400, pxToRem(21.13));
+}
+.contact-icons_wrapper {
+
+}
+.member-social-media-icons__list {
+    display: flex;
+    margin-top: pxToRem(37.86);
+}
+.member-social-media__icon {
+    margin-right: pxToRem(5);
+    font-size: pxToRem(39);
+    opacity: 0.3;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.social-media-icon__link {
+}

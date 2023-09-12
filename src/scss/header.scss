@@ -67,13 +67,13 @@
 .header-title {
     @include font($white, pxToRem(64), 900, pxToRem(75.14));
     text-transform: uppercase;
-    margin-top: 129px;
+    margin-top: pxToRem(129);
 }
 .header-subtitle {
     @include font($white, pxToRem(24), 400, pxToRem(28.18));
-    margin-top: 31.43px;
+    margin-top: pxToRem(31.43);
 }
 .header-button__submit {
     @include submit_btn();
-    margin-top: 82px;
+    margin-top: pxToRem(82);
 }
