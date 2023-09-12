@@ -20,11 +20,12 @@
     max-width: 1170px;
 }
 @mixin submit_btn {
-    @include font($white, 24px, 900, 28.18px);
+    @include font($white, pxToRem(24), 900, pxToRem(28.18));
     text-transform: uppercase;
-    width: 370px;
-    height: 80px;
+    width: pxToRem(370);
+    height: pxToRem(80);
     background-color: $red;
 }
-
-
+@function pxToRem($font-size-px) {
+    @return $font-size-px / $default-fontsize-px * 1rem;    
+}

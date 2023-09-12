@@ -59,18 +59,18 @@
     }
 }
 .item-link {
-    @include font($white, 13px, 700, 15.26px);
+    @include font($white, pxToRem(13), 700, pxToRem(15.26));
     text-transform: uppercase;    
 }
 .header-content__wrapper {
 }
 .header-title {
-    @include font($white, 64px, -900, -75.14px);
+    @include font($white, pxToRem(64), 900, pxToRem(75.14));
     text-transform: uppercase;
     margin-top: 129px;
 }
 .header-subtitle {
-    @include font($white, 24px, 400, 28.18px);
+    @include font($white, pxToRem(24), 400, pxToRem(28.18));
     margin-top: 31.43px;
 }
 .header-button__submit {
