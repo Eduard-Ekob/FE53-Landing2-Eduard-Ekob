@@ -1,0 +1,22 @@
+{
+  "name": "fe53-landing2-eduard-ekob",
+  "version": "1.0.0",
+  "description": "landing2 exam",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "author": "ED",
+  "license": "ISC",
+  "dependencies": {
+    "jquerry": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "concat": "^1.0.3",
+    "parcel": "^2.9.3",
+    "sass": "^1.66.1",
+    "server": "^1.0.38"
+  }
+}

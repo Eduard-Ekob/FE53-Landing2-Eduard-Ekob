@@ -1,0 +1,30 @@
+@mixin base-font ($color: rgb(59, 59, 59)){
+    font-family: "Raleway", sans-serif;
+    color: $color;
+}
+@mixin font($font-color, $font-size, $font-weight, $font-linehight){
+    @include base-font($font-color);
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $font-linehight;
+}
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-between-center {
+    @include flex-between();
+    align-items: center;
+}
+@mixin main-container {
+    max-width: 1170px;
+}
+@mixin submit_btn {
+    @include font($white, 24px, 900, 28.18px);
+    text-transform: uppercase;
+    width: 370px;
+    height: 80px;
+    background-color: $red;
+}
+
+
