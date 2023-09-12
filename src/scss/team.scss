@@ -4,11 +4,9 @@
     @include main-container;
     @include flex-between-center;
     padding: pxToRem(100) 0 pxToRem(100);
-    margin: auto;
 }
 .team-wrapper {
-    @include flex-between;
-    justify-content: center;
+    @include flex-center;
     flex-wrap: wrap;
     margin-left: pxToRem(-15);
     margin-right: pxToRem(-15);

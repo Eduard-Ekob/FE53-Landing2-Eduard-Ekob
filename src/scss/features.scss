@@ -1,0 +1,39 @@
+.features-section {
+}
+.features-container {
+    @include main-container;
+    padding: pxToRem(100) 0 pxToRem(100);   
+}
+.features-cards__wrapper {
+    @include flex-center;
+    flex-wrap: wrap;
+    margin-left: pxToRem(-15);
+    margin-right: pxToRem(-15);
+}
+.feature-card {
+    display: block;
+    width: pxToRem(370);
+    margin: pxToRem(15);
+    text-align: center;
+}
+.feature-card__icon {
+    width: pxToRem(100);
+    height: pxToRem(100);
+    margin: auto;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.feature-card__title {
+    @include font($dark-gray, pxToRem(24), 900, pxToRem(28.18));
+    text-transform: uppercase;
+    margin-top: pxToRem(39);
+}
+.feature-card__description {
+    margin-top: pxToRem(30);
+}
+.feature-card-description__text {
+    @include font($purple, pxToRem(18), 400, pxToRem(21.13));
+}

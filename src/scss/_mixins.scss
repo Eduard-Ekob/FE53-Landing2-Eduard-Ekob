@@ -16,9 +16,13 @@
     @include flex-between();
     align-items: center;
 }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
 @mixin main-container {
     max-width: 1170px;
-    // margin: auto;
+    margin: auto;
 }
 @mixin submit_btn {
     @include font($white, pxToRem(24), 900, pxToRem(28.18));
