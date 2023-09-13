@@ -1,0 +1,19 @@
+.download {
+}
+.container-download {
+    @include main-container;
+    padding: pxToRem(134) 0 pxToRem(114);
+    text-align: center;
+}
+.download-title {
+    @include font($black, pxToRem(30), 500, pxToRem(35.22));
+}
+.subtitle {
+    @include font($black, pxToRem(18), 700, pxToRem(21.13));
+    margin-top: pxToRem(15);
+    text-transform: uppercase;
+}
+.button-download {
+    @include submit_btn();
+    margin-top: pxToRem(47.71);
+}

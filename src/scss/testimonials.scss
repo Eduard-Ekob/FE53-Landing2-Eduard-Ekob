@@ -1,0 +1,63 @@
+.testimonials {
+    height: pxToRem(490);
+}
+.container-testimonials {
+    height: pxToRem(490);
+    
+}
+.testimonials-content {
+    @include flex-between;  
+    height: 100%; 
+}
+.testimonials-left-side__wrapper {
+    width: 50vw;
+    
+    background-image: url(../img/slider_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.testimonials-right-side__wrapper {
+    width: 50vw;
+    background-color: $purple-bright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-right-side__text {
+    width: pxToRem(471);
+}
+.right-side__text {
+    @include font($white, pxToRem(36), 400, pxToRem(48.74));
+    font-family: Cardo;
+
+}
+.testimonials-dots-button__navigation {
+    margin-top: pxToRem(31);
+    padding-top: pxToRem(31);
+    margin: auto;
+    width: pxToRem(170);
+}
+.testimonials-button__list {
+    @include flex-between-center;   
+    flex-wrap: nowrap;
+}
+.testimonials-button {
+    margin: auto;
+}
+.radiobutton-solid {
+    width: pxToRem(14);
+    height: pxToRem(14);
+    background-color: $purple-bright;
+}
+.radiobutton-solid {
+    width: pxToRem(14);
+    height: pxToRem(14);
+    border-radius: 50%;
+    background-color: $purple-bright;
+}
+.radiobutton-empty {
+    width: pxToRem(14);
+    height: pxToRem(14);
+    border-radius: 50%;
+}
