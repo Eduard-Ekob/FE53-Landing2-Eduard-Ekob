@@ -1,0 +1,86 @@
+.work {
+}
+.work-container {
+    max-width: pxToRem(1510);
+    margin: auto;
+
+    @include flex-center;
+    flex-wrap: wrap;
+}
+// .work-example {
+//     position: relative;
+//     width: pxToRem(377);
+//     height: pxToRem(340);
+//     & img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+//     &:hover:after {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-image: url(../img/work-background.png);  
+//         display: block;     
+//     }
+   
+// }
+.work-example {
+    position: relative;
+    width: pxToRem(377);
+    height: pxToRem(340);
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.work-example__wrapper {
+    position: relative;
+    width: pxToRem(377);
+    height: pxToRem(340);
+}
+.work-example3 {
+    position: absolute;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/work-background.png);  
+        display: block;
+        z-index: 1;   
+    }
+}
+.project-name__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    z-index: 2;
+}
+.project-name {
+    margin-top: pxToRem(20.57);
+}
+.prtitle {
+    @include font($white, pxToRem(24), 900, pxToRem(28.18));
+    text-transform: uppercase;
+}
+.prname {
+    @include font($white, pxToRem(18), 400, pxToRem(21.13));
+}
