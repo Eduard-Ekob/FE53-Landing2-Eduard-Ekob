@@ -1,0 +1,62 @@
+.footer-main {
+    background-color: $pink;   
+}
+.footer-copyright__section {
+    background-color: $dark-pink;
+}
+.container-footer {
+    @include main-container;
+    width: 100vw;
+    padding: pxToRem(71) 0 pxToRem(24.14);  
+}
+.footer-contact {
+    @include flex-center;    
+    padding-bottom: pxToRem(71);
+}
+.footer-card__wrapper {
+    width: pxToRem(370);
+    text-align: center;
+    margin: pxToRem(15);
+}
+.footer-card__title {
+    text-align: center;
+}
+.footer-card-title__text {
+    @include font($white, pxToRem(18), 700, pxToRem(21.13));
+    text-transform: uppercase;
+}
+.footer-card__subtitle {
+    margin-top: pxToRem(29); 
+}
+.footer-card-subtitle__text {
+    @include font($white, pxToRem(18), 400, pxToRem(21.13));
+}
+
+.footer-social-icons__wrapper {
+    margin-top: pxToRem(48.86);
+}
+.footer-social-icons__list {
+    @include flex-center
+}
+.footer-social__icon {
+    font-size: pxToRem(39);
+    margin: 0 pxToRem(13.5) 0 pxToRem(13.5);
+}
+.footer-social-media-icon__link {
+    color: $light-gray;
+}
+.footer-copyright {
+    @include main-container;
+    padding: pxToRem(23.86) 0 pxToRem(24.14);    
+}
+.footer-copyright__wrapper {
+    width: pxToRem(370);
+    margin: auto;
+    text-align: center;
+}
+.footer-copyright__text {
+    @include font($middle-gray, pxToRem(18), 400, pxToRem(21.13));
+    & span {
+        color: $white;
+    }
+}
